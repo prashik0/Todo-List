@@ -1,0 +1,273 @@
+
+.filter-search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filter-container {
+    display: flex;
+    align-items: center;
+}
+
+.filter-container select {
+    margin-right: 10px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+.search-container button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #45a049;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f7f7f7;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.task-input-container input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+.dropdown-container {
+    position: relative;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-container select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    width: 140px;
+}
+
+.dropdown-container input[type="date"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    display: none;
+}
+
+.task-input-container button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-input-container button:hover {
+    background-color: #45a049;
+}
+.task-details.done {
+    text-decoration: line-through;
+    color: #999;
+}
+
+
+.category-details, .due-date-details {
+    font-size: 9px;
+    margin-right: 2px;
+    font-family: "Raleway";
+    font-weight: bolder;
+}
+
+
+
+.priority-details {
+    font-size: 9px;
+    color: #000000;
+    margin-right: 2px;
+    font-family: "Raleway";
+    font-weight: bolder;
+}
+
+
+.due-date-details {
+    font-size: 9px;
+    color: #ff0000; /* White text color */
+    font-family: "Raleway";
+    margin-right: 2px; 
+    font-weight: bolder;/* Add some space between the due date and the category */
+}
+
+input[type="text"] {
+    /* width: 100%; */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#saveButton {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#saveButton:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+
+.task-details {
+    flex-grow: 1;
+    margin-right: 10px;
+    color: #333;
+}
+
+.deleteButton{
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 5px; 
+}
+
+.editButton{
+    background-color: #3821ce;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 5px;            
+}        
+
+.deleteButton:hover{
+    background-color: #d32f2f;
+}
+
+.editButton:hover{
+    background-color: #1d0d85;
+}
+
+.saveEditButton{
+    background-color: #21ce24;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 5px;             
+}        
+
+.saveEditButton:hover{
+    background-color: #4caf50;
+}
+
+.editTaskInput {
+    flex-grow: 1;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}        

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+
+
+        <div class="task-input-container">
+            <input type="text" id="taskInput" placeholder="Enter a task">
+        </div>
+
+        <div class="task-input-container">
+            <div class="dropdown-container">
+                <select id="categoryInput">
+                    <option value="Personal">Personal</option>
+                    <option value="Work">Work</option>
+                    <option value="Study/Education">Study/Education</option>
+                    <option value="Health/Fitness">Health/Fitness</option>
+                    <option value="Family">Family</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Travel">Travel</option>
+                </select>
+            </div>
+            <div class="dropdown-container">
+                <select id="dueDateInput">
+                    <option value="Today">Today</option>
+                    <option value="Tomorrow">Tomorrow</option>
+                    <option value="Next Week">Next Week</option>
+                    <option value="Pick a Date">Pick a Date</option>
+                </select>
+                <input type="date" id="pickDateInput" style="display: none;">
+            </div>
+            <div class="dropdown-container">
+                <select id="priorityInput">
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+            </div>            
+        </div>
+
+        <div class="task-input-container">
+            <button id="saveButton">Save</button>
+        </div>
+
+        <div class="dropdown-container">
+            <select id="filterOption">
+                <option value="Filter" disabled selected>Filter</option>
+                <option value="Category">Category</option>
+                <option value="Priority">Priority</option>
+            </select>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search Todo...">
+                <button id="searchButton">Search</button>
+            </div>                  
+        </div>
+        <div id="filterDropdown" style="display: none;">
+            <select id="filterValue" style="margin-top: 5px">
+                <!-- Categories and priorities will be dynamically populated using JavaScript -->
+            </select>
+        </div> 
+
+      
+        
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"> </script>
+</body>
+</html>
